@@ -1,0 +1,45 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif, '微软雅黑'; }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/ }
+
+.wrapper {
+  width: 1200px;
+  margin: 10px auto 0; }
+  .wrapper .w_fl {
+    width: 480px;
+    float: left; }
+    .wrapper .w_fl h1 {
+      color: #FFB100;
+      text-align: center; }
+    .wrapper .w_fl p {
+      margin-top: 10px;
+      color: #646464; }
+  .wrapper .w_fr {
+    width: 480px;
+    float: right; }
+    .wrapper .w_fr p {
+      margin-top: 10px;
+      color: #646464;
+      font-size: 15px; }
+      .wrapper .w_fr p .circle {
+        width: 13px;
+        height: 13px;
+        background: #3F1B1B;
+        display: inline-block;
+        margin-right: 5px; }
+
+/*# sourceMappingURL=index.css.map */
