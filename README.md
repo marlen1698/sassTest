@@ -1,5 +1,69 @@
 # sass_test
 Sass初始练习书写
+
+//utf-8编码格式，确保编译scss Line 2: Invalid GBK character "\xE7"
+
+/*sass编写中100_即100%*/
+//$height100_:100%;
+//$absolute:absolute;
+//$relative:relative;
+//$none:none;
+//$block:block;
+//$fl:left;
+//$fr:right;
+//$center:counter;
+//$table:table;
+
+/* 要注意表单元素并不继承父级 font 的问题 */
+
+body,
+button,
+input,
+select,
+textarea {
+font: 12px/1.5 "Microsoft YaHei", "Arial", "黑体", "宋体", sans-serif;
+}
+
+input,
+select,
+textarea {
+font-size: 100%;
+}
+/* 去掉 table cell 的边距并让其边重合 */
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/* ie bug：th 不继承 text-align */
+
+th { text-align: inherit; }
+/* 去除默认边框 */
+
+fieldset,
+img { border: $none; }
+/* ie6 7 8(q) bug 显示为行内表现 */
+
+iframe { display: $block; }
+/* 去掉列表前的标识，li 会继承 */
+
+ul, ol { list-style: $none; }
+/* 默认不显示下划线，保持页面简洁 */
+
+ins, a,
+a:hover { text-decoration: $none; }
+/* 去除 ie6 & ie7 焦点点状线 */
+
+a:focus,
+*:focus { outline: $none; }
+/* 设置显示和隐藏，通常用来与 js 配合 */
+
+.hide { display: $none; }
+
+.block {
+display: $block;
+}
+
 @charset "utf-8";
 
 $pcFont: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
